@@ -1,12 +1,12 @@
 import React from "react";
-//import styled from "styled-components";
+
 
 const Square = ( {onClick, value} ) => {
     return(
-        
-        <button className="square"
+        <button 
+        className="square"
         onClick={onClick}>
-            {value}
+        {value}
         </button>
     )
 }

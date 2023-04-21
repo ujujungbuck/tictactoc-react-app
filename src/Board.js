@@ -4,14 +4,23 @@ import styled from "styled-components";
 import Square from "./Square";
 
 export const BoxContainer =  styled.div`
-display: flex;
+/* display: flex;
 align-items: center;
-justify-content: center;
+justify-content: center; */
 //flex-direction: column;
+font-size: 30px;
 background-color: pink;
-margin: 10px;
-padding: 10px;
+margin: 5% 40%;
+padding: 40px 40px;
 //height: 500px;
+ .square {
+    background: none;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+  }
 ` 
 
 
@@ -34,8 +43,9 @@ const Board = () => {
 
     return(
         <div>
-            <div className="status">{status}</div>
+
             <BoxContainer>
+            <div className="status">{status}</div>
                 <div className="board-row">
                     {renderSquare(0)}
                     {renderSquare(1)}
